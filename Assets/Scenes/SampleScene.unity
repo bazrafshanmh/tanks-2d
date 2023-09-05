@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 874683664}
   - component: {fileID: 874683663}
   - component: {fileID: 874683662}
-  - component: {fileID: 874683661}
+  - component: {fileID: 874683665}
   m_Layer: 5
   m_Name: left
   m_TagString: Untagged
@@ -388,21 +388,6 @@ RectTransform:
   m_AnchoredPosition: {x: -273, y: -129}
   m_SizeDelta: {x: 71.5017, y: 71.5017}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &874683661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874683659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2393dad1ea78c17a9bb3d7251783a683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 10
-  XPos: -1
-  Tank: {fileID: 1050474326}
 --- !u!114 &874683662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1647653816}
+      - m_Target: {fileID: 874683665}
         m_TargetAssemblyTypeName: MovementButtonTouched, Assembly-CSharp
         m_MethodName: ButtonTouched
         m_Mode: 1
@@ -497,6 +482,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874683659}
   m_CullTransparentMesh: 1
+--- !u!114 &874683665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874683659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2393dad1ea78c17a9bb3d7251783a683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
+  XPos: 1
+  Tank: {fileID: 1050474326}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 1647653819}
   - component: {fileID: 1647653818}
   - component: {fileID: 1647653817}
-  - component: {fileID: 1647653816}
+  - component: {fileID: 1647653820}
   m_Layer: 5
   m_Name: right
   m_TagString: Untagged
@@ -845,21 +845,6 @@ RectTransform:
   m_AnchoredPosition: {x: -82, y: -129}
   m_SizeDelta: {x: 71.5017, y: 71.5017}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1647653816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647653814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2393dad1ea78c17a9bb3d7251783a683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 10
-  XPos: 1
-  Tank: {fileID: 1050474326}
 --- !u!114 &1647653817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,7 +889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1647653816}
+      - m_Target: {fileID: 1647653820}
         m_TargetAssemblyTypeName: MovementButtonTouched, Assembly-CSharp
         m_MethodName: ButtonTouched
         m_Mode: 1
@@ -954,6 +939,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647653814}
   m_CullTransparentMesh: 1
+--- !u!114 &1647653820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647653814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2393dad1ea78c17a9bb3d7251783a683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: -10
+  XPos: 1
+  Tank: {fileID: 1050474326}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
