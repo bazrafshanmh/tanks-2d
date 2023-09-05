@@ -40,6 +40,6 @@ public class MovementController : MonoBehaviour
             Tank.transform.Translate(Vector3.left * Speed);
             tail.transform.position += Vector3.left*Speed;
         }
-        Debug.Log("Degree: "+GetComponent<RectTransform>().rotation.z.ToString());
+        Debug.Log("Degree: "+transform.rotation.z.ToString());
     }
 }
